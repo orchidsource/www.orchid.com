@@ -43,7 +43,7 @@
         "@ngx-translate/core": "^11.0.1",
         "@ngx-translate/i18n-polyfill": "^1.0.0",
         "core-js": "^2.6.10",
-        "node-fetch": "^2.6.0",
+        "node-fetch": "^2.6.1",
         "node-sass": "^4.13.1",
         "request": "^2.88.2",
         "rxjs": "~6.4.0",
