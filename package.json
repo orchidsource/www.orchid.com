@@ -37,7 +37,6 @@
         "@angular/platform-browser-dynamic": "^8.2.13",
         "@angular/platform-server": "^8.2.13",
         "@angular/router": "^8.2.13",
-        "@nguniversal/module-map-ngfactory-loader": "^8.1.1",
         "@ngx-i18nsupport/tooling": "^8.0.3",
         "@ngx-translate/core": "^11.0.1",
         "@ngx-translate/i18n-polyfill": "^1.0.0",
