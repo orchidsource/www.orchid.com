@@ -98,25 +98,6 @@
                         "browserTarget": "orchid-www:build"
                     }
                 },
-                "xliffmerge": {
-                    "builder": "@ngx-i18nsupport/tooling:xliffmerge",
-                    "options": {
-                        "xliffmergeOptions": {
-                            "i18nFormat": "xlf",
-                            "srcDir": "src/i18n",
-                            "genDir": "src/i18n",
-                            "defaultLanguage": "en",
-                            "languages": [
-                                "en",
-                                "ja",
-                                "ko",
-                                "id",
-                                "ru",
-                                "zh"
-                            ]
-                        }
-                    }
-                },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
