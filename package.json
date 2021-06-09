@@ -33,7 +33,6 @@
         "@angular/compiler": "^8.2.13",
         "@angular/core": "^8.2.13",
         "@angular/forms": "^8.2.13",
-        "@angular/http": "^7.2.15",
         "@angular/platform-browser": "^8.2.13",
         "@angular/platform-browser-dynamic": "^8.2.13",
         "@angular/platform-server": "^8.2.13",
