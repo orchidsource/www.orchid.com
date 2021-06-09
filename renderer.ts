@@ -4,7 +4,6 @@ import "reflect-metadata";
 import { enableProdMode } from "@angular/core";
 import { renderModuleFactory } from "@angular/platform-server";
 import { Routes } from "@angular/router";
-import { provideModuleMap } from "@nguniversal/module-map-ngfactory-loader";
 import { spawnSync } from "child_process";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { copySync, emptyDirSync } from "fs-extra";
@@ -82,9 +81,6 @@ copySync(IN_FOLDER, OUT_FOLDER, {
     renderModuleFactory(AppServerModuleNgFactory, {
       document: template,
       url: url,
-      extraProviders: [
-        provideModuleMap(LAZY_MODULE_MAP),
-      ]
     }).then(html => {
       console.log(`Rendered '${url}' to '${outFile}'`);
       if (outFile.includes('podcast/')) {

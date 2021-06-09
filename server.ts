@@ -3,7 +3,6 @@ import "reflect-metadata";
 
 import {enableProdMode} from "@angular/core";
 import {renderModuleFactory} from "@angular/platform-server";
-import {provideModuleMap} from "@nguniversal/module-map-ngfactory-loader";
 
 import * as express from "express";
 import {readFileSync} from "fs";
@@ -25,9 +24,6 @@ app.engine("html", (_, options, callback) => {
   renderModuleFactory(AppServerModuleNgFactory, {
     document: template,
     url: options.req.url,
-    extraProviders: [
-      provideModuleMap(LAZY_MODULE_MAP),
-    ]
   }).then(html => { callback(null, html); });
 });
 
